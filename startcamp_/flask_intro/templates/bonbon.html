@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>당신이 취직할 기업은?</title>
+</head>
+<body>
+    {% if pick == '백수'%}
+    <h1>{{dummy}}님은 안타깝게도 영원히 {{pick}}입니다 ㅠㅠ</h1>
+    <img src="{{pick_img}}">
+    {% else %}
+    <h1>{{dummy}}님은 향후에 {{pick}} 에서 일하게 됩니다!</h1>
+    <img src="{{pick_img}}">
+    {% endif %}
+</body>
+</html>
